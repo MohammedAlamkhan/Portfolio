@@ -1390,33 +1390,3 @@ body.offcanvas {
     filter: alpha(opacity=40);
     font-size: 14px;
 }
-
-@media screen and (max-width:480px){
-  .Portfolio-counters .Portfolio-counter {
-    font-size: 50px;
-    display: block;
-    color: black;
-    font-family: "Quicksand", Arial, sans-serif;
-    width: 100%;
-    font-weight: 700;
-    margin-bottom: .3em;
-  }
-  .Portfolio-counters .Portfolio-counter-label {
-    color: black;
-    text-transform: uppercase;
-    font-size: 20px;
-    letter-spacing: 5px;
-    margin-bottom: 1em;
-    display: block;
-  }
-  .Portfolio-counters .overlay {
-    z-index: 0;
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: white;
-  }  
-}
-
