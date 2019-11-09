@@ -303,7 +303,8 @@ figure {
           @media screen and (max-width: 768px) {
             #Portfolio-hero .flexslider .slider-text > .slider-text-inner h1 {
               font-size: 42px;
-              text-align: left } }
+              text-align: left 
+            } }
         #Portfolio-hero .flexslider .slider-text > .slider-text-inner h2 {
           font-size: 18px;
           line-height: 1.5;
@@ -1390,3 +1391,31 @@ body.offcanvas {
     filter: alpha(opacity=40);
     font-size: 14px;
 }
+
+@media screen and (max-width: 480px){  
+.Portfolio-feature .Portfolio-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100px;
+  display: table;
+  text-align: center;
+  background: #000000;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+}
+.Portfolio-feature .Portfolio-text {
+  padding-left: 65px;
+  width: 100%;
+}
+#Portfolio-hero .flexslider .slider-text > .slider-text-inner h1 {
+  font-size: 42px;
+  text-align: left;
+  margin-top:-150px; 
+}
+}
+
+
