@@ -1419,3 +1419,72 @@ body.offcanvas {
 }
 
 
+
+.container {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 15px;
+  position: relative;
+  width: 100%
+}
+
+.container--big {
+  height: 175vh
+}
+
+.container--full {
+  height: 100vh
+}
+
+.container--small {
+  height: 95vh;
+  z-index: 10 !important;
+  top: -609px !important;
+}
+
+.container .content {
+  background: rgba(0, 0, 0, .75);
+  border-radius: 8px;
+  color: #fff;
+  margin: 0 auto;
+  padding: 30px 35px;
+  text-align: center
+}
+
+.parallax__container {
+  clip: rect(0, auto, auto, 0);
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -100
+}
+
+.parallax__container .parallax {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  width: 100%
+}
+
+.bg1 {
+  background-image: url(../images/cover_bg_1.jpg);
+}
+
+

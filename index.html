@@ -193,6 +193,40 @@
             </div>
           </div>
         </section>
+
+
+
+        <section>
+          <div class="parallax bg1"></div>
+          <div id="Portfolio-counter" class="Portfolio-counters">
+            <div class="overlay"></div>
+            <div class="Portfolio-narrow-content">
+              <div class="row">
+              </div>
+              <div class="row">
+                <div class="col-md-3 text-center animate-box">
+                  <span class="Portfolio-counter js-counter" data-from="0" data-to="39" data-speed="5000" data-refresh-interval="50"></span>
+                  <span class="Portfolio-counter-label">Designs</span>
+                </div>
+                <div class="col-md-3 text-center animate-box">
+                  <span class="Portfolio-counter js-counter" data-from="0" data-to="36" data-speed="5000" data-refresh-interval="50"></span>
+                  <span class="Portfolio-counter-label">Projects</span>
+                </div>
+                <div class="col-md-3 text-center animate-box">
+                  <span class="Portfolio-counter js-counter" data-from="0" data-to="30" data-speed="5000" data-refresh-interval="50"></span>
+                  <span class="Portfolio-counter-label">Websites</span>
+                </div>
+                <div class="col-md-3 text-center animate-box">
+                  <span class="Portfolio-counter js-counter" data-from="0" data-to="6" data-speed="5000" data-refresh-interval="50"></span>
+                  <span class="Portfolio-counter-label">Apps</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+<!-- 
         <div id="Portfolio-counter" class="Portfolio-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
           <div class="overlay"></div>
           <div class="Portfolio-narrow-content">
@@ -217,7 +251,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <section class="Portfolio-skills" data-section="skills">
           <div class="Portfolio-narrow-content">
             <div class="row">
@@ -689,6 +723,14 @@
   gtag('config', 'UA-23581568-13');
 </script>
   <script src="js/ajax.js" data-cf-settings="283b678bb4a3d31bb7fd4317-|49" defer=""></script>
+  
+  <script src="dist/universal-parallax.min.js"></script>
+	<script src="js/demo.min.js"></script>
+	<script>
+		new universalParallax().init({
+			speed: 4
+		});
+	</script>
 </body>
 
 </html>
