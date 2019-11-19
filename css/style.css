@@ -415,7 +415,7 @@ figure figcaption {
   font-size: 60px;
   line-height: 1.3;
   font-weight: 700;
-  background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+  background-image:  url(../images/smoke.webp);
   background-size: cover;
   color: transparent;
   -moz-background-clip: text;
@@ -426,7 +426,7 @@ figure figcaption {
   #Portfolio-hero .flexslider .slider-text>.slider-text-inner h1 {
     font-size: 42px;
     text-align: left;
-    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-image: url(../images/smoke.webp);
     background-size: cover;
     color: transparent;
     -moz-background-clip: text;
