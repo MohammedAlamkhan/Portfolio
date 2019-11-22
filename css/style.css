@@ -284,6 +284,7 @@ figure figcaption {
 #Portfolio-aside .Portfolio-footer ul li a {
   color: black;
   padding: 4px;
+  font-size: 25px;
 }
 
 #Portfolio-aside .Portfolio-footer ul li a:hover,
