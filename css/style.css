@@ -128,7 +128,7 @@ figure figcaption {
 #Portfolio-aside .author-img {
   width: 150px;
   height: 150px;
-  margin: 0 auto;
+  margin: -20px auto;
   margin-bottom: 30px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -260,7 +260,7 @@ figure figcaption {
 
 @media screen and (max-width: 768px) {
   #Portfolio-aside .Portfolio-footer {
-    position: relative;
+    position: absolute;
     bottom: 0;
   }
 }
@@ -491,6 +491,7 @@ body.offcanvas {
 }
 
 body.offcanvas #Portfolio-aside {
+  height: 100%;
   -moz-transform: translateX(0);
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
