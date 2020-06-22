@@ -381,8 +381,20 @@ figure figcaption {
   z-index: 9;
 }
 
+#Portfolio-hero .flexslider .slider-text>.slider-text-inner .btn.btn-learn {
+  color:black;
+  border: 1px solid #000;
+  background: transparent !important;
+
+}
+
 @media screen and (max-width: 480px){
+  #Portfolio-hero .flexslider .slider-text>.slider-text-inner .btn.btn-learn {
+    color:white;
+    border: 1px solid #000;
+    background: #000000b3 !important;
   
+  }
  #myVideo {  
   right: 0;
   opacity: 0.5;
@@ -394,6 +406,12 @@ figure figcaption {
 }
 }
 
+@media screen and (min-width: 481px){
+  #myVideo {  
+display: none;
+ }
+ }
+ 
 
 #Portfolio-hero .flexslider .slider-text>.slider-text-inner {
   display: table-cell;
@@ -483,12 +501,7 @@ figure figcaption {
   font-weight: 400;
 }
 
-#Portfolio-hero .flexslider .slider-text>.slider-text-inner .btn.btn-learn {
-  color:white;
-  border: 1px solid #000;
-  background: #000000b3 !important;
 
-}
 
 #Portfolio-hero .flexslider .slider-text>.slider-text-inner .btn.btn-learn:hover {
   background: transparent !important;
