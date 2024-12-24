@@ -17,7 +17,8 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 1.8;
-  color: rgba(0, 0, 0, 0.7);
+  color: #594545;
+  background-color: #FFF8EA;
 }
 
 @media screen and (max-width: 992px) {
@@ -27,7 +28,7 @@ body {
 }
 
 a {
-  color: #000000;
+  color: #594545;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -36,7 +37,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #000000;
+  color: #594545;
   outline: none;
   text-decoration: none !important;
 }
@@ -80,17 +81,17 @@ figure figcaption {
 
 ::-webkit-selection {
   color: #fff;
-  background: #000000;
+  background: #594545;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #000000;
+  background: #594545;
 }
 
 ::selection {
   color: #fff;
-  background: #000000;
+  background: #594545;
 }
 
 #Portfolio-page {
@@ -107,7 +108,7 @@ figure figcaption {
   position: fixed;
   overflow-y: scroll;
   z-index: 1001;
-  background: white;
+  background-color: #FFF8EA;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -208,7 +209,7 @@ figure figcaption {
   bottom: 7px;
   left: 0;
   right: 0;
-  background-color: #000000;
+  background-color: #594545;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -224,7 +225,7 @@ figure figcaption {
 
 #Portfolio-aside #Portfolio-main-menu ul li a:hover {
   text-decoration: none;
-  color: black;
+  color: #594545;
 }
 
 #Portfolio-aside #Portfolio-main-menu ul li a:hover:after {
@@ -237,7 +238,7 @@ figure figcaption {
 }
 
 #Portfolio-aside #Portfolio-main-menu ul li.active a {
-  color: #000000;
+  color: #594545;
 }
 
 #Portfolio-aside #Portfolio-main-menu ul li.active a:after {
@@ -282,7 +283,7 @@ figure figcaption {
 }
 
 #Portfolio-aside .Portfolio-footer ul li a {
-  color: black;
+  color: #594545;
   padding: 4px;
   font-size: 25px;
 }
@@ -292,7 +293,7 @@ figure figcaption {
 #Portfolio-aside .Portfolio-footer ul li a:focus {
   text-decoration: none;
   outline: none;
-  color: #000000;
+  color: #594545;
 }
 
 .container-wrap {
@@ -320,6 +321,7 @@ figure figcaption {
   border: none;
   z-index: 1;
   margin-bottom: 0;
+  background-color: #FFF8EA;
 }
 
 #Portfolio-hero .flexslider .slides {
@@ -367,7 +369,7 @@ figure figcaption {
 #Portfolio-hero .flexslider .flex-control-nav li a.flex-active {
   cursor: pointer;
   background: transparent;
-  border: 2px solid #000000;
+  border: 2px solid #594545;
 }
 
 #Portfolio-hero .flexslider .flex-direction-nav {
@@ -382,7 +384,7 @@ figure figcaption {
 }
 
 #Portfolio-hero .flexslider .slider-text>.slider-text-inner .btn.btn-learn {
-  color:black;
+  color:#594545;
   border: 1px solid #000;
   background: transparent !important;
 
@@ -392,7 +394,7 @@ figure figcaption {
   #Portfolio-hero .flexslider .slider-text>.slider-text-inner .btn.btn-learn {
     color:white;
     border: 1px solid #000;
-    background: #000000b3 !important;
+    background: #594545b3 !important;
   
   }
  #myVideo {  
@@ -431,7 +433,7 @@ display: none;
 #Portfolio-hero .flexslider .slider-text>.slider-text-inner h2 {
   margin: 0;
   padding: 0;
-  color: black;
+  color: #594545;
   font-family: "Playfair Display", Georgia, serif;
 }
 
@@ -670,7 +672,7 @@ body.offcanvas .Portfolio-nav-toggle {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-family: "Quicksand", Arial, sans-serif;
-  background-color: #000000;
+  background-color: #815B5B;
   color: #fff;
   position: relative;
   -webkit-box-shadow: none !important;
@@ -706,7 +708,7 @@ body.offcanvas .Portfolio-nav-toggle {
 }
 
 .panel-heading a.collapsed {
-  background: #000000;
+  background: #594545;
   border: 1px solid #e6e6e6 !important;
   color: white;
 }
@@ -770,15 +772,15 @@ body.offcanvas .Portfolio-nav-toggle {
   display: block;
   width: 40px;
   height: 40px;
-  background: #000000;
+  background: #594545;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
   text-align: center;
-  -moz-box-shadow: 0 0 0 5px #000000;
-  -webkit-box-shadow: 0 0 0 5px #000000;
-  box-shadow: 0 0 0 5px #000000;
+  -moz-box-shadow: 0 0 0 5px #594545;
+  -webkit-box-shadow: 0 0 0 5px #594545;
+  box-shadow: 0 0 0 5px #594545;
   line-height: 40px;
   float: left;
 }
@@ -804,7 +806,7 @@ body.offcanvas .Portfolio-nav-toggle {
 }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-none {
-  background: #000000;
+  background: #594545;
   width: 20px;
   height: 20px;
   margin-left: 10px;
@@ -812,7 +814,7 @@ body.offcanvas .Portfolio-nav-toggle {
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
   position: relative;
-  background: #000000;
+  background: #594545;
   padding: 1.5em;
   margin-left: 60px;
   -webkit-background-clip: padding-box;
@@ -828,7 +830,7 @@ body.offcanvas .Portfolio-nav-toggle {
   height: 0;
   border-style: solid;
   border-width: 9px 9px 9px 0;
-  border-color: transparent #000000 transparent transparent;
+  border-color: transparent #594545 transparent transparent;
   left: 0;
   top: 10px;
   margin-left: -9px;
@@ -870,7 +872,7 @@ body.offcanvas .Portfolio-nav-toggle {
   -ms-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
   -o-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
   box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #594545;
 }
 
 .services .icon2 {
@@ -880,7 +882,7 @@ body.offcanvas .Portfolio-nav-toggle {
 
 .services .icon2 i {
   font-size: 30px;
-  color: #000000;
+  color: #594545;
 }
 
 .services h3 {
@@ -912,7 +914,7 @@ body.offcanvas .Portfolio-nav-toggle {
   height: 50px;
   display: table;
   margin: 0 auto;
-  background: #000000;
+  background: #594545;
 }
 
 .services .icon:before,
@@ -929,7 +931,7 @@ body.offcanvas .Portfolio-nav-toggle {
   height: 0;
   border-style: solid;
   border-width: 0 50px 30px 50px;
-  border-color: transparent transparent #000000 transparent;
+  border-color: transparent transparent #594545 transparent;
 }
 
 .services .icon:after {
@@ -938,7 +940,7 @@ body.offcanvas .Portfolio-nav-toggle {
   height: 0;
   border-style: solid;
   border-width: 30px 50px 0 50px;
-  border-color: #000000 transparent transparent transparent;
+  border-color: #594545 transparent transparent transparent;
 }
 
 .services .icon i {
@@ -974,7 +976,7 @@ body.offcanvas .Portfolio-nav-toggle {
 }
 
 .progress-bar {
-  background: #000000;
+  background: #594545;
   -webkit-box-shadow: none;
   box-shadow: none;
   font-size: 12px;
@@ -997,7 +999,7 @@ body.offcanvas .Portfolio-nav-toggle {
   width: 10px;
   height: 10px;
   content: '';
-  background: #000000;
+  background: #594545;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1011,15 +1013,15 @@ body.offcanvas .Portfolio-nav-toggle {
 }
 
 .progress-bar.color-1 {
-  background: #000000;
+  background: #594545;
 }
 
 .progress-bar.color-1:after {
-  background: #000000;
+  background: #594545;
 }
 
 .progress-bar.color-1 span {
-  color: #000000;
+  color: #594545;
 }
 
 
@@ -1039,7 +1041,7 @@ body.offcanvas .Portfolio-nav-toggle {
   height: 100px;
   display: table;
   text-align: center;
-  background: #000000;
+  background: #594545;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
@@ -1049,7 +1051,7 @@ body.offcanvas .Portfolio-nav-toggle {
 .Portfolio-feature .Portfolio-icon i {
   display: table-cell;
   vertical-align: middle;
-  color: #000000;
+  color: #594545;
   font-size: 60px;
   height: 100px;
 }
@@ -1188,7 +1190,7 @@ body.offcanvas .Portfolio-nav-toggle {
 }
 
 .work-menu span a.active {
-  color: #000000;
+  color: #594545;
 }
 
 .project {
@@ -1208,7 +1210,7 @@ body.offcanvas .Portfolio-nav-toggle {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #000000a8;
+  background: #594545a8;
   opacity: 0;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -1365,7 +1367,7 @@ body.offcanvas .Portfolio-nav-toggle {
   width: 100px;
   height: 100px;
   font-size: 50px;
-  color: #000000;
+  color: #594545;
   background: #fff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1433,7 +1435,7 @@ body.offcanvas .Portfolio-nav-toggle {
 }
 
 .Portfolio-social li a:hover {
-  color: #000000;
+  color: #594545;
 }
 
 .Portfolio-social li a:hover,
@@ -1441,7 +1443,7 @@ body.offcanvas .Portfolio-nav-toggle {
 .Portfolio-social li a:focus {
   outline: none;
   text-decoration: none;
-  color: #000000;
+  color: #594545;
 }
 
 #map {
@@ -1488,9 +1490,9 @@ body.offcanvas .Portfolio-nav-toggle {
 
 .pagination li a:hover,
 .pagination li a:focus {
-  background: #000000;
+  background: #594545;
   color: #fff;
-  border: 1px solid #000000;
+  border: 1px solid #594545;
 }
 
 @media screen and (max-width: 768px) {
@@ -1500,15 +1502,15 @@ body.offcanvas .Portfolio-nav-toggle {
 }
 
 .pagination li.active a {
-  background: #000000;
-  border: 1px solid #000000 !important;
+  background: #594545;
+  border: 1px solid #594545 !important;
 }
 
 .pagination li.active a:hover,
 .pagination li.active a:focus {
-  background: #000000;
+  background: #594545;
   color: #fff;
-  border: 1px solid #000000 !important;
+  border: 1px solid #594545 !important;
 }
 
 .btn {
@@ -1551,27 +1553,27 @@ body.offcanvas .Portfolio-nav-toggle {
 
 .btn-primary {
   background: white;
-  color: black;
-  border: 2px solid #000000;
+  color: #594545;
+  border: 2px solid #594545;
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  background: black !important;
-  border-color: black !important;
+  background: #594545 !important;
+  border-color: #594545 !important;
 }
 
 .btn-primary.btn-outline {
   background: transparent;
-  color: #000000;
-  border: 2px solid #000000;
+  color: #594545;
+  border: 2px solid #594545;
 }
 
 .btn-primary.btn-outline:hover,
 .btn-primary.btn-outline:focus,
 .btn-primary.btn-outline:active {
-  background: #000000;
+  background: #594545;
   color: #fff;
 }
 
@@ -1703,7 +1705,7 @@ body.offcanvas .Portfolio-nav-toggle {
   box-shadow: none;
   background: transparent;
   border: transparent;
-  background: #000000;
+  background: #594545;
   height: 54px;
   font-size: 16px;
   font-weight: 400;
@@ -1938,7 +1940,7 @@ body.offcanvas .Portfolio-nav-toggle {
     height: 100px;
     display: table;
     text-align: center;
-    background: #000000;
+    background: #594545;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
@@ -1954,7 +1956,7 @@ body.offcanvas .Portfolio-nav-toggle {
     font-size: 42px;
     text-align: left;
     margin-top: -150px;
-    color: #00000073;
+    color: #59454573;
   }
 }
 
