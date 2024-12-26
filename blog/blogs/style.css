@@ -1,0 +1,141 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D2C8B5;
+    color: #000;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    margin-bottom: 20px;
+}
+.header h1 {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0;
+}
+.header span {
+    font-size: 0.9em;
+}
+.blog-title {
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+.content {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+.content h2 {
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+}
+.content img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.content ul {
+    padding-left: 20px;
+}
+.content li {
+    margin-bottom: 0.5em;
+}
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #555;
+}
+.footer span {
+    display: block;
+    margin: 10px 0;
+}
+.callout {
+    background-color: #C2B8A5;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 4px solid #8B0000;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    .blog-title {
+        font-size: 3em;
+    }
+    .content {
+        font-size: 1.1em;
+    }
+    .content h2 {
+        font-size: 1.4em;
+    }
+    .callout {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    .blog-title {
+        font-size: 2em;
+        margin-top: 15px;
+    }
+    .content {
+        font-size: 1em;
+        line-height: 1.5;
+    }
+    .content h2 {
+        font-size: 1.3em;
+        margin-top: 1.2em;
+    }
+    .callout {
+        padding: 12px;
+        margin: 15px 0;
+    }
+    .content ul {
+        padding-left: 15px;
+    }
+    .content li {
+        margin-bottom: 0.8em;
+    }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 320px) {
+    .container {
+        padding: 10px;
+    }
+    .blog-title {
+        font-size: 1.8em;
+    }
+    .content h2 {
+        font-size: 1.2em;
+    }
+    .callout {
+        padding: 10px;
+    }
+}

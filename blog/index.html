@@ -9,12 +9,12 @@
             font-family: 'Georgia', serif;
             margin: 0;
             padding: 0;
-            background-color: #D2C8B5; /* Subtle off-white */
-            color: #000; /* Dark gray text */
+            background-color: #D2C8B5;
+            color: #000;
         }
         .container {
             margin: 0 auto;
-            padding: 40px;
+            padding: 20px;
             max-width: 1200px;
         }
         .header {
@@ -23,6 +23,9 @@
             align-items: center;
             border-bottom: 1px solid #000;
             margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 10px 0;
         }
         .header h1 {
             font-size: 1.2em;
@@ -32,14 +35,17 @@
             color: #000;
             cursor: pointer;
             transition: color 0.3s ease;
+            margin: 0;
+            padding: 5px 10px;
         }
         .header h1:hover {
-            color: #b2935b; /* Gold-like color */
+            color: #b2935b;
         }
         .content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            justify-items: start;
         }
         .blog-card {
             border: 1px solid #e0ded9;
@@ -50,6 +56,7 @@
             cursor: pointer;
             text-decoration: none;
             color: inherit;
+            width: 100%;
             max-width: 400px;
         }
         .blog-card:hover {
@@ -58,7 +65,7 @@
         }
         .image-container {
             width: 100%;
-            padding-top: 56.25%; /* 16:9 aspect ratio */
+            padding-top: 56.25%;
             position: relative;
             overflow: hidden;
         }
@@ -95,14 +102,66 @@
             margin-top: 40px;
             font-size: 0.9em;
             color: #777;
+            padding: 20px 0;
         }
         .footer span {
             display: block;
             margin: 10px 0;
         }
         .footer span.heart {
-            color: #b2935b; /* Gold heart */
+            color: #b2935b;
             font-size: 1.2em;
+        }
+
+        /* Responsive adjustments */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            .header {
+                flex-direction: column;
+                gap: 10px;
+                padding: 15px 0;
+            }
+            .header h1 {
+                font-size: 1.1em;
+                padding: 8px 15px;
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid #e0ded9;
+            }
+            .header h1:last-child {
+                border-bottom: none;
+            }
+            .content {
+                grid-template-columns: 1fr;
+                justify-items: center;
+            }
+            .blog-card-content {
+                padding: 15px;
+            }
+            .blog-card-content .title {
+                font-size: 1.2em;
+            }
+            .blog-card-content .description {
+                font-size: 0.9em;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+            .header h1 {
+                font-size: 1em;
+                padding: 6px 12px;
+            }
+            .blog-card-content .title {
+                font-size: 1.1em;
+            }
+            .blog-card-content .description {
+                font-size: 0.85em;
+            }
         }
     </style>
 </head>
@@ -141,14 +200,13 @@
         // Render blogs based on the provided data
         function renderBlogs(data) {
             const container = document.getElementById('blog-container');
-            container.innerHTML = ''; // Clear existing blogs
+            container.innerHTML = '';
             data.forEach(blog => {
                 const blogCard = document.createElement('a');
                 blogCard.href = "/blog/blogs/"+blog.file;
                 blogCard.target = '_blank';
                 blogCard.className = 'blog-card';
 
-                // Construct HTML content dynamically
                 blogCard.innerHTML = `
                     <div class="image-container">
                         <img src="${blog.image1}" alt="Blog Image">
@@ -160,7 +218,6 @@
                     </div>
                 `;
 
-                // Append blog card to container
                 container.appendChild(blogCard);
             });
         }
@@ -168,7 +225,7 @@
         // Filter blogs by category
         function filterBlogs(category) {
             if (category === 'All') {
-                renderBlogs(blogs); // Show all blogs
+                renderBlogs(blogs);
             } else {
                 const filteredBlogs = blogs.filter(blog => blog.category === category);
                 renderBlogs(filteredBlogs);
@@ -179,7 +236,7 @@
         document.getElementById('category-header').addEventListener('click', (event) => {
             const category = event.target.getAttribute('data-category');
             if (category) {
-                filterBlogs(category); // Filter blogs based on selected category
+                filterBlogs(category);
             }
         });
 
