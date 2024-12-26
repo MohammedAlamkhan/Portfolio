@@ -18,7 +18,7 @@ body {
   font-size: 15px;
   line-height: 1.8;
   color: #594545;
-  background-color: #FFF8EA;
+  background-color: #D2C8B5;
 }
 
 @media screen and (max-width: 992px) {
@@ -106,9 +106,9 @@ figure figcaption {
   float: left;
   width: 300px;
   position: fixed;
-  overflow-y: scroll;
+  overflow-y: hidden;
   z-index: 1001;
-  background-color: #FFF8EA;
+  background-color: #D2C8B5;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -321,7 +321,7 @@ figure figcaption {
   border: none;
   z-index: 1;
   margin-bottom: 0;
-  background-color: #FFF8EA;
+  background-color: #D2C8B5;
 }
 
 #Portfolio-hero .flexslider .slides {
@@ -395,7 +395,7 @@ figure figcaption {
     color:white;
     border: 1px solid #000;
     background: #594545b3 !important;
-  
+    width: 200px;
   }
  #myVideo {  
   right: 0;
@@ -405,6 +405,7 @@ figure figcaption {
   margin-left: -20px;
   max-width: 120%;
   margin-bottom: -700px;
+  margin-top: -20px;
 }
 }
 
@@ -439,7 +440,7 @@ display: none;
 
 #Portfolio-hero .flexslider .slider-text>.slider-text-inner h1 {
   margin-bottom: 20px;
-  font-size: 60px;
+  font-size: 100px;
   line-height: 1.3;
   font-weight: 700;
   background-image:  url(../images/smoke.webp);
@@ -528,9 +529,23 @@ body.offcanvas #Portfolio-aside {
   -o-transform: translateX(0);
   transform: translateX(0);
   width: 300px;
-  background: white;
+  background: #D2C8B5;
   z-index: 999;
   position: fixed;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: column; /* Stacks items vertically on small screens */
+    gap: 5px; /* Adjust gap for smaller screens */
+  }
 }
 
 body.offcanvas #Portfolio-main,

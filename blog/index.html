@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Site</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #D2C8B5; /* Subtle off-white */
+            color: #000; /* Dark gray text */
+        }
+        .container {
+            margin: 0 auto;
+            padding: 40px;
+            max-width: 1200px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px solid #000;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 1.2em;
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: #000;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        .header h1:hover {
+            color: #b2935b; /* Gold-like color */
+        }
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .blog-card {
+            border: 1px solid #e0ded9;
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: #e0ded9;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            max-width: 400px;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .image-container {
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+            position: relative;
+            overflow: hidden;
+        }
+        .image-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.9);
+        }
+        .blog-card-content {
+            padding: 20px;
+            text-align: left;
+        }
+        .blog-card-content .title {
+            font-size: 1.4em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #000;
+        }
+        .blog-card-content .description {
+            color: #000;
+            font-size: 0.95em;
+            margin-bottom: 10px;
+        }
+        .blog-card-content .date {
+            color: #999;
+            font-size: 0.85em;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        .footer span {
+            display: block;
+            margin: 10px 0;
+        }
+        .footer span.heart {
+            color: #b2935b; /* Gold heart */
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header" id="category-header">
+            <h1 data-category="All">All</h1>
+            <h1 data-category="Tech">Tech</h1>
+            <h1 data-category="Philosophy">Philosophy</h1>
+            <h1 data-category="Music">Music</h1>
+            <h1 data-category="Other">Other</h1>
+        </div>
+        <div id="blog-container" class="content">
+            <!-- Content will be dynamically loaded here -->
+        </div>
+        <div class="footer">
+            <span>© Mohammed Alam</span>
+            <span class="heart">&#9829;</span>
+        </div>
+    </div>
+
+    <script>
+        let blogs = []; // To store blogs for filtering
+
+        // Fetch the JSON file and render its data dynamically
+        async function loadBlogs() {
+            try {
+                const response = await fetch('data.json');
+                blogs = await response.json();
+                renderBlogs(blogs); // Initially render all blogs
+            } catch (error) {
+                console.error('Error loading blogs:', error);
+            }
+        }
+
+        // Render blogs based on the provided data
+        function renderBlogs(data) {
+            const container = document.getElementById('blog-container');
+            container.innerHTML = ''; // Clear existing blogs
+            data.forEach(blog => {
+                const blogCard = document.createElement('a');
+                blogCard.href = "/blog/blogs/"+blog.file;
+                blogCard.target = '_blank';
+                blogCard.className = 'blog-card';
+
+                // Construct HTML content dynamically
+                blogCard.innerHTML = `
+                    <div class="image-container">
+                        <img src="${blog.image1}" alt="Blog Image">
+                    </div>
+                    <div class="blog-card-content">
+                        <p class="title">${blog.title}</p>
+                        <p class="description">${blog.description}</p>
+                        <p class="date">${blog.date}</p>
+                    </div>
+                `;
+
+                // Append blog card to container
+                container.appendChild(blogCard);
+            });
+        }
+
+        // Filter blogs by category
+        function filterBlogs(category) {
+            if (category === 'All') {
+                renderBlogs(blogs); // Show all blogs
+            } else {
+                const filteredBlogs = blogs.filter(blog => blog.category === category);
+                renderBlogs(filteredBlogs);
+            }
+        }
+
+        // Add click event listeners to category headers
+        document.getElementById('category-header').addEventListener('click', (event) => {
+            const category = event.target.getAttribute('data-category');
+            if (category) {
+                filterBlogs(category); // Filter blogs based on selected category
+            }
+        });
+
+        // Call the function on page load
+        loadBlogs();
+    </script>
+</body>
+</html>
